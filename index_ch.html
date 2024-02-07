@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo-gore.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Bamboo Panda</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index_ch.html">
+                <img src="images/logo-gore.png" alt="Image Not Found">
+            </a>
+            <div class="language-links">
+                <a href="index.html" class="language-link">英语</a>
+                <a href="index_sr.html" class="language-link">塞尔维亚语</a>
+                <a href="index_ch.html" class="language-link">汉语</a>
+            </div>
+            <ul>
+                <li><a class="ch-sredina" href="index_ch.html">主页</a></li>
+                <li><a class="ch-sredina"  href="menu_ch.html">菜单</a></li>
+                <li><a class="ch-sredina"  href="about_ch.html">关于我们</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="menu-button" onclick="toggleMenu(event)">
+                    <img src="images/icons8-menu-50.png" alt="Menu" class="menu-icon" onclick='toggleMenu()'>
+                </button>
+                    <div class="postavke">
+                        <ul class="dropdown">
+                            <li><a href="index_ch.html">主页</a></li>
+                            <li><a href="menu_ch.html">菜单</a></li>
+                            <li><a href="about_ch.html">关于我们</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    
+    <h1 class="naslov">欢迎</h1>
+    <div class="opis-ceo">
+        <p class="opis"> Bamboo Panda
+        </p>
+    </div>
+    <div class="dugme">
+       <a href="menu_ch.html">
+            <button class="meni-dugme">查看我们的菜单</button>
+        </a> 
+    </div>
+</body>
+</html>

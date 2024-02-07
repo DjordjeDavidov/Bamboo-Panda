@@ -1,0 +1,748 @@
+nav {
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    border-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav img {
+    height: 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 10px; 
+}
+
+.language-links {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.language-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.language-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+nav ul {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 165px; 
+}
+
+.ch-sredina:last-child {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: text-decoration 1s;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+.menu-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative; 
+    z-index: 103;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        align-items: center;
+        top: calc(100% + 10px); 
+        right: 15px; 
+        padding: auto;
+        z-index: 1000;
+    }
+
+    .menu-icon.active + ul {
+        display: flex;
+    }
+}
+
+.dropdown .menu-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.postavke {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20px;
+    z-index: 101;
+    text-align: flex;
+}
+
+.postavke.active {
+    display: block;
+}
+
+.postavke .dropdown li a {
+    display: inline-block;
+    background-color: transparent;    
+    color: black;
+    padding: 1px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.postavke .dropdown li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bez\ zbamjeva\ \ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+.naslov {
+    font-family: "Rubik Bubbles", system-ui;
+    color: #cb1e1e;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    min-height: 5px;
+    padding-top: 55px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    z-index: 99;
+    border: none;
+    padding-top: 50px;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.opis-ceo {
+    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
+    font-family: Arial;
+    font-size: 20px;
+    height: auto;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    opacity: 1;
+    animation: fadeIn 2s forwards;
+}
+
+.opis {
+    font-size: 100px;
+    font-family: "Oswald", sans-serif;
+}
+
+.dugme {
+   text-align: center;
+   padding-top: 20px;
+}
+
+.meni-dugme {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 50px;
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: color 0.5s, background-color 1s, border 0.8s, padding-left 0.8s, padding-right 0.8s;
+    animation: fadeIn 2s forwards;
+}
+
+.meni-dugme:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration: underline;
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: transparent;
+    padding: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.adresa {
+    font-family: Arial;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.telefon {
+    font-family: Arial;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+.insta {
+    width: 30px;
+    height: auto;
+    vertical-align: top;
+}
+
+/* meni */
+
+.panda1 {
+    height: 450px;
+    display: none;
+    position: fixed;
+    bottom: -37px;
+    left: -10px;
+    z-index: 999;
+}
+
+@media only screen and (min-width: 1024px) {
+    .panda1 {
+        display: block;
+    }
+}
+
+.pozadina {
+    width: 70%;
+    min-width: 300px;
+    max-width: 900px;
+    height: auto;
+    min-height: 500px; 
+    margin: 100px auto 0; 
+    background-color: rgb(241, 230, 208);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+
+.nudle {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    font-weight: 500;
+    padding-left: 15px;
+    text-decoration: underline 1.2px;
+}
+
+.cena {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 45px;
+}
+
+.cenaw {
+    margin-top: 5px;
+    margin-left: 45px;
+    margin-bottom: 5px;
+}
+
+/* Chicken */
+
+.ckn {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.ckn:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.ckn:active {
+    opacity: 70%;
+}
+
+.chicken-noodles, .beef-noodles, .shrimp-noodles,
+.moms-noodles, .sichuan-chicken, .sichuan-beef,
+.chicken-rice, .beef-rice, .shrimp-rice,
+.vegetable-rice, .cucumber-salad, .spring-rolls,
+.boiled-dumplings-p, .fried-dumplings-p{
+    height: 150px;
+    width: auto;
+    border-radius: 15px;
+}
+
+/* Beef */
+
+.bfn {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.bfn:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.bfn:active {
+    opacity: 70%;
+}
+
+.naslov-np {
+    font-size: 15px;
+    color: #3f3f3f;
+    padding-left: 5px;
+}
+
+/* Shrimp */
+
+.shn {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.shn:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.shn:active {
+    opacity: 70%;
+}
+
+/* Mamas */
+
+.mmn {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.mmn:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.mmn:active {
+    opacity: 70%;
+}
+
+/* Sichuan Chicken */
+
+.sch-ch {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.sch-ch:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.sch-ch:active {
+    opacity: 70%;
+}
+
+/* Sichuan Beef */
+
+.sch-bf {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.sch-bf:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.sch-bf:active {
+    opacity: 70%;
+}
+
+/* Chicken Fried Frice */
+
+.ckr {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.ckr:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.ckr:active {
+    opacity: 70%;
+}
+
+/* Beef Fried Rice */
+
+.bfr {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.bfr:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.bfr:active {
+    opacity: 70%;
+}
+
+/* Shrimp Fried Rice */
+
+.shr {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.shr:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.shr:active {
+    opacity: 70%;
+}
+
+/* Vegetable Fried Rice */
+
+.vegr {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.vegr:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.vegr:active {
+    opacity: 70%;
+}
+
+/* Cucumber salad */
+
+.cuc {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.cuc:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.cuc:active {
+    opacity: 70%;
+}
+
+/*Spring Rolls */
+
+.spr {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.spr:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.spr:active {
+    opacity: 70%;
+}
+
+/*Pork Boiled Dumplins */
+
+.dbp {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.dbp:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.dbp:active {
+    opacity: 70%;
+}
+
+/*Pork Fried Dumplins */
+
+.dfp {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.8s, opacity 0.1s;
+
+}
+
+.dfp:hover {
+    cursor: pointer;
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.dfp:active {
+    opacity: 70%;
+}
+
+
+@media (max-width: 600px) {
+    .ckn, .bfn, .shn, .mmn, .dfp, .dbp, .ckr, .bfr, .shr, .vegr, .sch-bf, .sch-ch,
+    .spr, .cuc{
+        justify-content: center;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    animation: fadeIn 1.3s forwards;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
+
+.naslovi {
+    padding-left: 15px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.paragrafi {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.adresa {
+    padding-bottom: 0px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.adresa:hover {
+    text-decoration: underline;
+}
+
+.insta {
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.wolt {
+    color: rgb(39, 39, 255);
+}
+
+.telefon {
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .adresa, .insta {
+        display: block;
+        text-align: center;
+    }
+    
+    .paragrafi {
+        padding-right: 5px;
+    }
+
+    .adresa {
+        padding-right: 27px;
+    }
+
+    .insta {
+        padding-left: 145px;
+        margin-top: 10px;
+    }
+}

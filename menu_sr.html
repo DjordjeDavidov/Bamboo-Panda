@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo-gore.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Bamboo Panda</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index_sr.html">
+                <img src="images/logo-gore.png" alt="Image Not Found">
+            </a>
+            <div class="language-links">
+                <a href="index.html" class="language-link">EN</a>
+                <a href="index_sr.html" class="language-link">SR</a>
+                <a href="index_ch.html" class="language-link">CH</a>
+            </div>
+            <ul>
+                <li><a href="index_sr.html">Početna</a></li>
+                <li><a href="menu_sr.html">Meni</a></li>
+                <li><a href="about_sr.html">O Nama</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="menu-button" onclick="toggleMenu(event)">
+                    <img src="images/icons8-menu-50.png" alt="Menu" class="menu-icon" onclick='toggleMenu()'>
+                </button>
+                    <div class="postavke">
+                        <ul class="dropdown">
+                            <li><a href="index_sr.html">Početna</a></li>
+                            <li><a href="menu_sr.html">Meni</a></li>
+                            <li><a href="about_sr.html">O Nama</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <img src="images/panda.png" alt="Red Panda" class="panda1">
+    <div class="pozadina">
+        <h2 class="nudle fade-in">Glavna jela</h2>
+        <div class="sch-ch">
+            <img src="images/Sichuan chicken+rice.png" alt="Chicken Noodles" class="sichuan-chicken fade-in">
+            <h1 class="naslov-np"> - Sichuan Piletina sa Pirinčem</h1>
+            <h5 class="cena">Kod nas ~ 710 din</h5>
+            <h5 class="cenaw">Wolt ~ 860 din</h5>
+        </div>
+        <div class="sch-bf fade-in">
+            <img src="images/Sichuan beef +rice.png" alt="Chicken Noodles" class="sichuan-beef fade-in">
+            <h1 class="naslov-np"> - Sichuan Govedina sa Pirinčem</h1>
+            <h5 class="cena">Kod nas ~ 800 din</h5>
+            <h5 class="cenaw">Wolt ~ 950 din</h5>
+        </div>
+
+        <h2 class="nudle fade-in">Nudle</h2>
+        <div class="ckn fade-in">
+            <img src="images/Chicken fried noodles.png" alt="Chicken Noodles" class="chicken-noodles fade-in">
+            <h1 class="naslov-np"> - Pileće Pržene Nudle</h1>
+            <h5 class="cena">Kod nas ~ 620 din</h5>
+            <h5 class="cenaw">Wolt ~ 770 din</h5>
+        </div>
+        <div class="bfn fade-in">
+            <img src="images/Chicken fried noodles.png" alt="Chicken Noodles" class="beef-noodles fade-in">
+            <h1 class="naslov-np"> - Goveđe Pržene Nudle</h1>
+            <h5 class="cena">Kod nas ~ 620 din</h5>
+            <h5 class="cenaw">Wolt ~ 790 din</h5>
+        </div>
+        <div class="shn fade-in">
+            <img src="images/Shrimp fried nodles.png" alt="Chicken Noodles" class="shrimp-noodles fade-in">
+            <h1 class="naslov-np"> - Pržene Nudle sa Škampima </h1>
+            <h5 class="cena">Kod nas ~ 750 din</h5>
+            <h5 class="cenaw">Wolt ~ 890 din</h5>
+        </div>
+        <div class="mmn fade-in">
+            <img src="images/Moms noodles.png" alt="Chicken Noodles" class="moms-noodles fade-in">
+            <h1 class="naslov-np"> - Moms Nudle</h1>
+            <h5 class="cena">Kod nas ~ 550 din</h5>
+            <h5 class="cenaw">Wolt ~ 700 din</h5>
+        </div>
+        <h2 class="nudle fade-in">Prženi Pirinač</h2>
+        <div class="ckr fade-in">
+            <img src="images/Chicked fried rice.png" alt="Chicken Noodles" class="chicken-rice fade-in">
+            <h1 class="naslov-np"> - Pileći Prženi Pirinač</h1>
+            <h5 class="cena">Kod nas ~ 590 din</h5>
+            <h5 class="cenaw">Wolt ~ 700 din</h5>
+        </div>
+        <div class="bfr fade-in">
+            <img src="images/Beef fried rice.png" alt="Chicken Noodles" class="beef-rice fade-in">
+            <h1 class="naslov-np"> - Goveđi Prženi Pirinač</h1>
+            <h5 class="cena">Kod nas ~ 590 din</h5>
+            <h5 class="cenaw">Wolt ~ 750 din</h5>
+        </div>
+        <div class="shr fade-in">
+            <img src="images/Shrimp fried rice.png" alt="Chicken Noodles" class="shrimp-rice fade-in">
+            <h1 class="naslov-np"> - Prženi Pirinač sa Škampima</h1>
+            <h5 class="cena">Kod nas ~ 710 din</h5>
+            <h5 class="cenaw">Wolt ~ 820 din</h5>
+        </div>
+        <div class="vegr fade-in">
+            <img src="images/Vegetable fried rice.png" alt="Chicken Noodles" class="vegetable-rice fade-in">
+            <h1 class="naslov-np"> - Prženi Pirinač sa Povrćem</h1>
+            <h5 class="cena">Kod Nas ~ 550 din</h5>
+            <h5 class="cenaw">Wolt ~ 680 din</h5>
+        </div>
+        <h2 class="nudle fade-in">Salate</h2>
+        <div class="cuc fade-in">
+            <img src="images/Cucumber salad.png" alt="Chicken Noodles" class="cucumber-salad fade-in">
+            <h1 class="naslov-np"> - Salata od Krastavca</h1>
+            <h5 class="cena">Kod nas ~ 390 din</h5>
+            <h5 class="cenaw">Wolt ~ 490 din</h5>
+        </div>
+        <h2 class="nudle fade-in">Prilozi</h2>
+        <div class="spr fade-in">
+            <img src="images/Spring rolls.png" alt="Chicken Noodles" class="spring-rolls fade-in">
+            <h1 class="naslov-np"> - Spring Rolnice</h1>
+            <h5 class="cena">Kod nas ~ 450 din</h5>
+            <h5 class="cenaw">Wolt ~ 580 din</h5>
+        </div>
+        <div class="dbp fade-in">
+            <img src="images/Boiled dumplings.png" alt="Chicken Noodles" class="boiled-dumplings-p fade-in">
+            <h1 class="naslov-np"> - Kuvani Damplingzi od Svinjetine</h1>
+            <h5 class="cena">Kod nas ~ 550 din</h5>
+            <h5 class="cenaw">Wolt ~ 680 din</h5>
+        </div>
+        <div class="dfp fade-in">
+            <img src="images/Fried dumpligs.png" alt="Chicken Noodles" class="fried-dumplings-p fade-in">
+            <h1 class="naslov-np"> - Prženi Damplingzi od Svinjetine</h1>
+            <h5 class="cena">Kod nas ~ 550 din</h5>
+            <h5 class="cenaw">Wolt ~ 680 din</h5>
+        </div>
+        <div class="dbp fade-in">
+            <img src="images/Boiled dumplings.png" alt="Chicken Noodles" class="boiled-dumplings-p fade-in">
+            <h1 class="naslov-np"> - Kuvani Damplingzi od Govedine</h1>
+            <h5 class="cena">Kod nas ~ 630 din</h5>
+            <h5 class="cenaw">Wolt ~ 730 din</h5>
+        </div>
+        <div class="dfp fade-in">
+            <img src="images/Fried dumpligs.png" alt="Chicken Noodles" class="fried-dumplings-p fade-in">
+            <h1 class="naslov-np"> - Prženi Damplingzi od Govedinom</h1>
+            <h5 class="cena">Kod nas ~ 630 din</h5>
+            <h5 class="cenaw">Wolt ~ 730 din</h5>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
