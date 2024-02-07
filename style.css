@@ -228,6 +228,13 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+    .naslov {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+}
+
 .dugme {
    text-align: center;
    padding-top: 20px;
