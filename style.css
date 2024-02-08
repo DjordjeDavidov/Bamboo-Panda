@@ -6,6 +6,17 @@
     z-index: 999;
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        z-index: 999;
+    }
+}
 nav {
     background-color: transparent;
     border: solid;
