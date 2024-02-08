@@ -332,6 +332,14 @@ footer a {
     }
 }
 
+@media only screen and (min-width: 1441px) {
+    .panda1 {
+        bottom: -30px;
+        height: 350px;
+        display: block;
+    }
+}
+
 .pozadina {
     width: 70%;
     min-width: 300px;
