@@ -10,8 +10,7 @@
 
 @media screen and (max-width: 768px) {
     .header {
-        background-color: transparent;
-        backdrop-filter: blur(10px);
+        position: absolute;
     }
 }
 nav {
@@ -344,7 +343,7 @@ footer a {
 
 @media only screen and (min-width: 1024px) {
     .panda1 {
-        height: 400px;
+        height: 500px;
         display: block;
     }
 }
