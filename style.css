@@ -201,7 +201,7 @@ body {
 }
 
 .naslov {
-    font-family: "Rubik Bubbles", system-ui;
+    font-family: "Rubik Bubbles", system-ui, Arial;
     color: #cb1e1e;
     font-size: 50px;
     height: 100%;
@@ -245,7 +245,7 @@ body {
 
 .opis {
     font-size: 100px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif, Arial;
 }
 
 @media screen and (max-width: 480px) {
@@ -262,7 +262,7 @@ body {
 }
 
 .meni-dugme {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif, Arial;
     font-size: 25px;
     background-color: black;
     color: white;
@@ -376,7 +376,7 @@ footer a {
 }
 
 .nudle {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif, Arial;
     display: block;
     font-weight: 500;
     padding-left: 15px;
